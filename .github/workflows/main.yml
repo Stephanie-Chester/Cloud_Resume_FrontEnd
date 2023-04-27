@@ -1,16 +1,12 @@
-name: E2E on Chrome
-
-on:
-  push:
-    branches:
-      - main
-
+name: Chrome
+on: push
 jobs:
-  Cypress-Test:
+  chrome:
     runs-on: ubuntu-latest
+    name: E2E on Chrome
     steps:
-      - name: Checkout GitCode
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - uses: cypress-io/github-action@v5
         with:
           browser: chrome
 
