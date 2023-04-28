@@ -1,17 +1,20 @@
-name: Cypress e2e Tests
-
-on: [push]
+name: Cypress e2e test
+on: 
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch:
 
 jobs:
- cypress-run:
+  checkout-and-test:
     runs-on: ubuntu-latest
-    steps: 
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install node
-        uses: actions/setup-node@v2
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
-      - name: run cypress tests with firefox
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: run cypress tests with chrome
         uses: cypress-io/github-action@v2
         with:
           browser: chrome
