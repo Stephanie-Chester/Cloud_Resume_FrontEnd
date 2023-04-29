@@ -1,19 +1,18 @@
-name: Cypress e2e test
-on: 
-  push:
-    branches:
-      - 'main'
+name: Cypress e2e Tests
+
+on: push
 
 jobs:
-  checkout-and-test:
-    runs-on: ubuntu-latest
+  cypress-run:
+    runs-on: ubuntu-22.04
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-
-      - name: Check out repository code
-        uses: actions/checkout@v2
-
-      - name: run cypress tests with chrome
-        uses: cypress-io/github-action@v2
+      - name: Checkout
+        uses: actions/checkout@v3
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
         with:
+          build: npm run build
+          start: npm start
           browser: chrome
