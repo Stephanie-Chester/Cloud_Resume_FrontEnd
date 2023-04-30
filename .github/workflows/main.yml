@@ -4,8 +4,28 @@ on: push
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     container: cypress/browsers:node18.12.0-chrome107
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          working-directory: ./cypress
+          browser: chrome
+
+      - name: Cypress Install
+        uses: actions/checkout@v2
+        with:
+          run: npm install cypress --save-dev
+
+      - name: Cypress run tests
+        uses: cypress-io/github-action@v5
+        with:
+          working-directory: ./cypress
+          spec: cypress/e2e/visitorCounter.cy.js
+          record: true
+        env:
+          # pass the Cypress Cloud record key as an environment variable
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          # pass GitHub token to allow accurately detecting a build vs a re-run build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
