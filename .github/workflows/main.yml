@@ -9,6 +9,7 @@ jobs:
     defaults:
       run:
         shell: bash
+        working-directory: ${{ github.workspace }}/${{ env.PROJECT_PATH }}
   
     steps:
       - name: checkout
