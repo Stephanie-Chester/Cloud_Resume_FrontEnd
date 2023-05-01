@@ -16,14 +16,10 @@ jobs:
         working-directory: cypress
         run: npm install cypress --save-dev
 
-      - name: Create folder
-        run: |
-          mkdir -p cypress/e2e
-
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          working-directory: cypress
+          working-directory: /home/runner/work/Cloud_Resume_FrontEnd/Cloud_Resume_FrontEnd/cypress/e2e/
           spec: e2e/visitorCounter.cy.js
           record: true
         env:
