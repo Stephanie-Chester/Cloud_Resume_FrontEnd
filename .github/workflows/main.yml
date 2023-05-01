@@ -31,4 +31,4 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           working-directory: cypress
-          spec: e2e/visitorCounter.cy.js
+          spec: e2e/visitorAPI.cy.js
