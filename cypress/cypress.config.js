@@ -3,6 +3,7 @@ const { defineConfig } = require('cypress')
 module.exports = defineConfig({
     projectId: "r6v848",
     fixturesFolder: false,
+    integrationFolder: "cypress/e2e",
   e2e: {
     baseUrl: 'https://www.stephaniechester.live/',
     setupNodeEvents(on, config) {},
