@@ -5,11 +5,7 @@ on: push
 jobs:
   Cypress_e2e_test:
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        shell: bash
-  
+    
     steps:
       - name: checkout
         uses: actions/checkout@v3
