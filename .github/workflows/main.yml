@@ -22,7 +22,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          working-directory: cypress
+          working-directory: cypress/e2e
           record: true
         env:
           # pass the Cypress Cloud record key as an environment variable
