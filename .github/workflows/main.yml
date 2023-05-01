@@ -1,4 +1,4 @@
-name: Cypress e2e Tests
+name: Cypress e2e Tests 
 
 on: push
 
@@ -9,21 +9,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          working-directory: ./cypress
-          browser: chrome
-
-      - name: Cypress Install
-        uses: actions/checkout@v2
-        with:
-          run: npm install cypress --save-dev
-          command: npx cypress run
-
-      - name: Cypress run tests
+      - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
+          build: npm run build
+          start: npm start
+          browser: chrome
           working-directory: ./cypress
-          spec: cypress/e2e/visitorCounter.cy.js
+          spec: e2e/visitorCounter.cy.js
           record: true
         env:
           # pass the Cypress Cloud record key as an environment variable
