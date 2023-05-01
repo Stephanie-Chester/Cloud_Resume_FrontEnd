@@ -9,11 +9,12 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ${{ github.workspace }}/${{ env.PROJECT_PATH }}
   
     steps:
       - name: checkout
         uses: actions/checkout@v3
+        with: 
+          working-directory: ${{ github.workspace }}/${{ env.PROJECT_PATH }}
       
       - name: Install npm
         working-directory: cypress
