@@ -9,7 +9,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ${{ env:GITHUB_WORKSPACE }}
+        working-directory: ${{ env.working-directory }}
   
     steps:
       - name: checkout

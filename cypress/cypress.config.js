@@ -4,6 +4,7 @@ module.exports = defineConfig({
     projectId: "r6v848",
     fixturesFolder: false,
   e2e: {
+    baseUrl: 'https://www.stephaniechester.live/',
     setupNodeEvents(on, config) {},
     supportFile: false,
     specPattern: "./cypress/e2e/*.{spec,cy}.js"
