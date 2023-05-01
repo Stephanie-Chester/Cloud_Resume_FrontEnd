@@ -23,7 +23,6 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           working-directory: cypress
-          spec: cypress/e2e/visitorCounter.cy.js
           record: true
         env:
           # pass the Cypress Cloud record key as an environment variable
