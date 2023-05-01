@@ -5,7 +5,7 @@ describe('visitorCount api', () => {
                 method: 'POST',
                 url: 'https://7hn5blxzxg.execute-api.us-east-1.amazonaws.com/default/IncrementVisitorCounter'
             })
-                .should((response) => {
+                .then((response) => {
                     cy.log(JSON.stringify(response.body))
                 });
         });
