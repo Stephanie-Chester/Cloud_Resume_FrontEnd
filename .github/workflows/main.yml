@@ -9,14 +9,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
           build: npm run build
           start: npm start
           browser: chrome
-          working-directory: ./cypress
-          spec: e2e/visitorCounter.cy.js
           record: true
         env:
           # pass the Cypress Cloud record key as an environment variable
