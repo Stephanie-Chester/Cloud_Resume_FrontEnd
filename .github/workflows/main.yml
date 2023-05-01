@@ -16,6 +16,10 @@ jobs:
         working-directory: cypress
         run: npm install cypress --save-dev
 
+      - name: Create folder
+        run: |
+          mkdir -p cypress/e2e
+
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
