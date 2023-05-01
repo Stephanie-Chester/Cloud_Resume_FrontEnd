@@ -8,9 +8,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
-      - run: |
-          echo ${{ github.workspace }}
-          echo $GITHUB_WORKSPACE
+        with:
+          browser: chrome
       
       - name: Install npm
         working-directory: cypress
@@ -19,7 +18,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          working-directory: /home/runner/work/Cloud_Resume_FrontEnd/Cloud_Resume_FrontEnd/cypress
+          working-directory: cypress
           spec: e2e/visitorCounter.cy.js
           record: true
         env:
