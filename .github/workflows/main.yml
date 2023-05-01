@@ -9,7 +9,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./cypress
+        working-directory: ./
   
     steps:
       - name: checkout
