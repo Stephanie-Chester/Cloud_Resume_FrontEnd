@@ -9,7 +9,6 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./
   
     steps:
       - name: checkout
