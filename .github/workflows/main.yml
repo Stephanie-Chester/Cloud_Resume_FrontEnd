@@ -5,12 +5,9 @@ on: push
 jobs:
   Cypress_e2e_test:
     runs-on: ubuntu-latest
-
     steps:
       - name: checkout
         uses: actions/checkout@v3
-        with:
-          GITHUB_WORKSPACE: /home/runner/work/Cloud_Resume_FrontEnd
       
       - name: Install npm
         working-directory: cypress
