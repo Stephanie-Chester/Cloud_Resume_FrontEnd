@@ -1,4 +1,4 @@
-name: Cypress e2e tests
+name: Cypress e2e visitor API tests
 
 on: push
 
