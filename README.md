@@ -4,6 +4,8 @@
 
 [![Cypress e2e tests](https://github.com/Stephanie-Chester/Cloud_Resume_FrontEnd/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/Stephanie-Chester/Cloud_Resume_FrontEnd/actions/workflows/main.yml)
 
+[![Upload S3 static Website](https://github.com/Stephanie-Chester/Cloud_Resume_FrontEnd/actions/workflows/S3.yml/badge.svg?event=push)](https://github.com/Stephanie-Chester/Cloud_Resume_FrontEnd/actions/workflows/S3.yml)
+
 ## AWS Cloud Resume Project
  
 This repo is my attempt at the Cloud Resume Challenge created by Forrest Brazeal. I have done this challenge in AWS cloud. The steps to the challenge are listed in the link below on Forrest's website. After I am done with the challenge I will also link my blog here in this space.
