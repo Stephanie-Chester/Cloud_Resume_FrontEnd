@@ -15,8 +15,6 @@ My website link:
 https://www.stephaniechester.live
 
 
-https://www.stephaniechester.live
-
 ## AWS Cloud Resume Project
  
 This repo is my attempt at the Cloud Resume Challenge created by Forrest Brazeal. I have done this challenge in AWS cloud. The steps to the challenge are listed in the link below on Forrest's website. After I am done with the challenge I will also link my blog here in this space.
@@ -47,12 +45,11 @@ This repo is my attempt at the Cloud Resume Challenge created by Forrest Brazeal
      ● Created a GitHub repository for my back-end and front-end code.<br>
      ● Set up Cypress Test in GitHub actions to test API and website.<br>
      ● Set up CI/CD deployment with GitHub actions for backend and frontend to automate applying AWS resources using Terraform<br>
+     ● Python unit tests for Lambda code<br>
      <a href="https://cloudresumechallenge.dev/instructions/" target="_blank"> Cloud Resume Challenge Official Website
  
  ### Coming soon:
- ● Python tests for Lambda code<br>
  ● Blog<br>
- ● Diagram of infrastructure<br>
  
  Cloud Resume Challenge Official Website
  
