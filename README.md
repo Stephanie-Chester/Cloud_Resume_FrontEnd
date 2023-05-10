@@ -10,9 +10,12 @@
 ![AWS Cloud Resume Architecture](https://user-images.githubusercontent.com/37819313/236535399-e97fd1ea-36f1-41cc-961e-9d357f14ce2e.png)
 
 
-My website link:
+### My website link:
 
 https://www.stephaniechester.live
+
+### My Cloud Resume Blog:
+https://stephaniechester.hashnode.dev/learning-infrastructure-as-code-with-terraform-my-experience-with-the-cloud-resume-challenge
 
 
 ## AWS Cloud Resume Project
@@ -46,10 +49,6 @@ This repo is my attempt at the Cloud Resume Challenge created by Forrest Brazeal
      ● Set up Cypress Test in GitHub actions to test API and website.<br>
      ● Set up CI/CD deployment with GitHub actions for backend and frontend to automate applying AWS resources using Terraform<br>
      ● Python unit tests for Lambda code<br>
-     <a href="https://cloudresumechallenge.dev/instructions/" target="_blank"> Cloud Resume Challenge Official Website
- 
- ### Coming soon:
- ● Blog<br>
  
  Cloud Resume Challenge Official Website
  
